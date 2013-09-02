@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
 
 	// Search EditText
 	EditText inputSearch;
-	PhotoSearchList searchAdapter;
+	SearchListAdapter searchAdapter;
 
 	// ArrayList for Listview
 	ArrayList<HashMap<String, String>> productList;
@@ -59,7 +59,7 @@ public class MainActivity extends Activity {
 
 		lv = (ListView) findViewById(R.id.list_view);
 		inputSearch = (EditText) findViewById(R.id.inputSearch);
-		searchAdapter = new PhotoSearchList(this, arr,inputSearch);
+		searchAdapter = new SearchListAdapter(this, arr,inputSearch);
 		//
 		// // Adding items to listview
 		// adapter = new ArrayAdapter<String>(this, R.layout.list_item,
